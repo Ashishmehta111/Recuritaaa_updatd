@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>forget page</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"><link rel="stylesheet" href="css/Log_in.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"><link rel="stylesheet" href="css/toggle_button.css">
+
+    </head>
+    <body>
+    <script>
+        function validate() {
+            var newpass = document.forms[0].newpassword.value;
+            var repass = document.forms[0].repassword.value;
+            if (newpass === repass) {
+                return true;
+            } else {
+                alert("Password must be the same!");
+                return false;
+            }
+        }
+    </script>
+
+    <script>
+        function highlightInput(elm)
+        {
+          elm.style.background="yellow";
+        }
+    </script>
+  
+    <h1 style="font-family:sofia;color:whitesmoke;font-size:60px;text-shadow: 2px 2px black;">Recruitaaaa</h1>
+     
+      <div class="bg">
+        <div class="card">
+        <div class="inner-box" id="card">
+        <div class="card-front">
+            <div class="log_in">
+               <h2>Forgot Page</h2>
+               <form action="/updatedata" method="post" onsubmit="return validate()" on="highlightInput(this)">
+               <div class="switch-button">
+        
+                <input class="switch-button-checkbox" type="checkbox" name="recruit" value="recruiter">
+                <label class="switch-button-label" for=""><span class="switch-button-label-span">Job seeker</span></label>
+              </div>
+
+            
+                <input type="email" name="email" placeholder="enter existing email" class="input-box" required>
+                <input type="password" name="newpassword" placeholder="enter new password" class="input-box" required>
+                <input type="password" name="repassword" placeholder="re-enter new password" class="input-box"  required>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+               </div>
+               </div>
+        </div>
+        </div>
+        </div>
+     </body>
+
+</html>

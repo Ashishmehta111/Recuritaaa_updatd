@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Candidate Search</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+    <h1 style="font-family:sofia;color:whitesmoke;font-size:60px;text-shadow: 2px 2px black">Recruitaaa</h1>
+    <div class="contain">
+  <h1>Find the Best People for your Company!</h1>
+
+  <div class="search-container">
+    <label for="location">Location:</label>
+    <input type="text" id="location" placeholder="Enter location">
+
+    <label for="job-role">Job Role:</label>
+    <input type="text" id="job-role" placeholder="Enter job role">
+
+    <button onclick="searchCandidates()">Search</button>
+  </div>
+</div>
+  <div id="candidate-list"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> LOGIN PAGE</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"><link rel="stylesheet" href="css/Log_in.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"><link rel="stylesheet" href="css/toggle_button.css">
+</head>
+<body>
+	<h1 style="font-family:sofia;color:whitesmoke;font-size:60px;text-shadow: 2px 2px black;">Recruitaaaa</h1>
+	<div class="bg">
+<div class="card">
+<div class="inner-box" id="card">
+<div class="card-front">
+    <div class="log_in">
+   	<h2>LOGIN</h2>
+   	<form action="/logindata" method="post" >
+		<div class="switch-button">
+        
+			<input class="switch-button-checkbox" type="checkbox" name="recruit" value="recruiter">
+			<label class="switch-button-label" for=""><span class="switch-button-label-span">Job seeker</span></label>
+		  </div>
+
+   	     <input type="email" name="email" class="input-box" placeholder="Your Email Id" required>
+   	     <input type="password" name="password"  class="input-box" placeholder="Password" required>
+   	     <button type="submit" class="submit-btn">Submit</button>
+   	     <input type="checkbox"><span>Remember Me</span>
+   	</form>	
+
+   	<button type="button" class="btn" onclick="openRegister()">I'm new here</button>
+	
+	   <form><a href="/forget"><strike>Forget Password</strike></a></form>
+
+    </div>
+</div>
+<div class="card-back">
+	<h2>REGISTER</h2>
+   	<form action="/registerdata"  method="post">
+
+		<div class="switch-button">
+        
+			<input class="switch-button-checkbox" type="checkbox" name="recruit" value="recruiter">
+			<label class="switch-button-label" for=""><span class="switch-button-label-span">Job seeker</span></label>
+		  </div>
+
+   		<input type="text" class="input-box" placeholder="Your Name" name="name" required>
+   	     <input type="email" class="input-box" placeholder="Your Email Id" name="email" required>
+   	     <input type="password" class="input-box" placeholder="Password" name="password" required>
+   	     <button type="submit" class="submit-btn">Submit</button>
+   	     <input type="checkbox"><span>Remember Me</span>
+   	</form>	
+   	<button type="button" class="btn" onclick="openLogin()">I have an account</button>
+     
+</div>
+        </div>
+      </div> 
+    </div>     
+    <script src="js/script.js"></script> 
+</body>
+</html>
+

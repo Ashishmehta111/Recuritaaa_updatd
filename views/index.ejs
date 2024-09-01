@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Recruitment Solution | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <script src="assets/js/scrollfade-0.1.js"></script>
+  <script src="/typewriter.js"></script>
+
+</head>
+<style>
+    #navg{
+      
+       font-size:23px;
+       
+    }
+    #head{
+      margin-left: 400px;
+      
+       
+    }
+    #head a:hover{
+       font-size: larger;
+       text-shadow: 30px;
+       color: white;
+       background-color: black;
+    }
+
+    
+</style>
+<body>
+  <header>
+    
+    <nav id="navg">
+        <h1 style="font-family:sofia;">Recruitaaaa</h1>
+      <ul id="head">
+        <li><a href="\About">About</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="#">Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="\search">Search</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="\login">Log in</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </ul>
+    </nav>
+    
+  </header>
+  <section id="intro">
+    <div class="text scrollFade">
+    <h1 id="text"></h1>
+    <a href="/search">Hire Now</a>
+  </div>
+
+  <script>
+
+    // Define your text
+        var textToWrite = "TRANSFORMING THE WAY MNCs HIRE!";
+
+        // Set up variables
+        var textContainer = document.getElementById('text');
+        var delayBetweenCharacters = 100; // Adjust this value to control the typing speed
+
+        // Function to simulate typing effect
+        function typeWriterEffect(text, index) {
+        if (index < text.length) {
+        textContainer.textContent += text.charAt(index);
+        index++;
+        setTimeout(function() {
+          typeWriterEffect(text, index);
+        }, delayBetweenCharacters);
+        }
+        }
+
+        // Trigger the typing effect
+        window.addEventListener('load', function() {
+        typeWriterEffect(textToWrite, 0);
+        });
+
+</script>
+
+  
+  <img src="images/intro.jpg" alt="image">
+</section>
+
+<section id="intro" class="scrollFade">
+  <img src="images/recruite.jpg" alt="image">
+  <div class="recruite scrollFade">
+<h1>Welcome to Our Recruitment Solution</h1>
+<h3>We aim to provide a seamless hiring experience for multiple MNCs. Our platform streamlines the recruitment process, making it efficient and effective.</h3>
+</div>
+</section>
+
+  <!-- <section id="features">
+    <h2>Key Features</h2>
+    <div class="list">
+    <ul>
+      <li><a class="point" onclick="currentFeature(1)"> Advanced Job Posting:</a> </li>
+      <li><a class="point" onclick="currentFeature(2)"> Applicant Tracking System</a> </li>
+      <li><a class="point" onclick="currentFeature(3)"> Candidate Matching:</a> </li>
+      <li><a class="point" onclick="currentFeature(4)"> Collaboration Hiring</a> </li>
+      <li><a class="point" onclick="currentFeature(5)"> Integration option</a> </li>
+    </ul>
+    <div class="details" id="feature1">
+      <p>Easily create and manage job listings to reach a wide pool of qualified candidates.</p>
+    </div>
+    <div class="details" id="feature2">
+      <p>Track and manage applications efficiently, simplifying your hiring workflow.</p>
+    </div>
+    <div class="details" id="feature3">
+      <p>Intelligent algorithms match you with the most suitable candidates based on their skills and experience.</p>
+    </div>
+    <div class="details" id="feature4">
+      <p>Seamless collaboration between hiring teams for evaluating candidates, sharing feedback, and making informed decisions.</p>
+    </div>
+    <div class="details" id="feature5">
+      <p>Our solution integrates with popular HR tools and job boards, providing a seamless experience..</p>
+    </div>
+
+  </section> -->
+  <section id="search" class="scrollFade">
+    <div id="contain" class="scrollFade" onclick="window.open('/search')">
+      <p>Entry level, graduate, experienced Professional</p>
+      <button class="sear" >Search</button>
+    </div>
+    <div id="head2" class="scrollFade">
+      <h1>Recruiting Across all Career Levels.</h1>
+    </div>
+  </section>
+  <h2 style="text-align:center;font-size:30px">What Our Clients Say</h2>
+  
+  <div id="testimonial">
+  <div class="flip-card" class="scrollFade">
+    <div class="flip-card-inner" class="scrollFade">
+      <div class="flip-card-front">
+      <img src="images/Joseph.jpg" alt="image" class="scrollFade">
+      </div>
+      <div class="flip-card-back">
+        <h1>Joseph doe</h1>
+        <p>Your has revolutionized our hiring process. Their platform helped us find exceptional talent in a fraction of the time. Highly recommended!"</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card" class="scrollFade">
+    <div class="flip-card-inner" class="scrollFade">
+      <div class="flip-card-front">
+      <img src="images/Ali.jpg" alt="image" class="scrollFade">
+      </div>
+      <div class="flip-card-back">
+        <h1>Ali Ahmed</h1>
+        <p>Your has revolutionized our hiring process. Their platform helped us find exceptional talent in a fraction of the time. Highly recommended!"</p>
+      </div>
+    </div>
+    </div>
+  <div class="flip-card" class="scrollFade">
+    <div class="flip-card-inner" class="scrollFade">
+      <div class="flip-card-front">
+      <img src="images/zahir.jpg" alt="image" class="scrollFade">
+      </div>
+      <div class="flip-card-back">
+        <h1>Zahir Sheikh</h1>
+        <p>Your has revolutionized our hiring process. Their platform helped us find exceptional talent in a fraction of the time. Highly recommended!"</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card" class="scrollFade">
+    <div class="flip-card-inner" class="scrollFade">
+      <div class="flip-card-front">
+      <img src="images/Christiana.jpg" alt="image" class="scrollFade">
+      </div>
+      <div class="flip-card-back">
+        <h1>Christiana Silva</h1>
+        <p>Your has revolutionized our hiring process. Their platform helped us find exceptional talent in a fraction of the time. Highly recommended!"</p>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="case">
+  <h2>Case Studies</h2>
+  <div id="case-studies" class="scrollFade">
+    <div class="case-study" class="scrollFade">
+      <h3>Company Aceable: Reached thousands of People all over the world</h3>
+      <p>Company Aceable faced challenges in reaching people in different countries. But with Recruitaaa it reached and hired people all over the world. Now Aceable is one of the major MNC's hiring company hiring more than 10,000 in a year.</p>
+    </div>
+    <div class="case-study" class="scrollFade">
+      <h3>Company Percepta: Streamlining Recruitment for Global Expansion</h3>
+      <p>Company Percepta faced challenges in managing a high volume of applications for their global expansion plans. With Recruitaaaa, they successfully automated their hiring process, reducing time-to-hire by 40% and hiring top talent across multiple countries.</p>
+    </div>
+    <!-- Add more case studies here -->
+  </div>
+</section>
+  <!-- <section id="cta">
+    <h2>Experience the Future of Hiring</h2>
+    <p>Sign up for a demo and see how Recruitaaa can transform your recruitment process.</p>
+    <a href="#" class="button">Get Started</a>
+  </section>
+ -->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+      <p>Contact us: <a href="tel:+123456789">+1 (234) 567-89</a> | <a href="#">info@recruitaa.com</a></p>
+    </div>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
